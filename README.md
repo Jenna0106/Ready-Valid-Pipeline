@@ -1,6 +1,6 @@
 # Elastic Pipeline Register with Ready/Valid Handshake
 
-This repository contains a synthesizable single-stage pipeline register implemented in Verilog using a standard ready/valid handshake protocol. The design behaves as a one-entry elastic buffer that safely handles backpressure while maintaining correct data flow and maximum throughput.
+This repository contains a synthesizable single-stage pipeline register implemented in SystemVerilog using a standard ready/valid handshake protocol. The design behaves as a one-entry elastic buffer that safely handles backpressure while maintaining correct data flow and maximum throughput.
 
 ---
 
@@ -28,10 +28,10 @@ This protocol guarantees no data loss, duplication, or corruption under backpres
 
 ## Repository Contents
 
-- **top.v**  
+- **pipeline_reg.sv**  
   RTL implementation of the single-stage elastic pipeline register.
 
-- **tb.v**  
+- **tb_pipeline_reg.sv**  
   Self-checking testbench that verifies:
   - Reset behavior  
   - Pass-through operation  
